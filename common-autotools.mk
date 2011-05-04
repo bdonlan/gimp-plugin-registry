@@ -1,5 +1,5 @@
 
-SRCDIR = ./src
+SRCDIR ?= ./src
 
 
 PREFIX = /usr
@@ -46,7 +46,7 @@ install: build-stamp
 	make -C $(SRCDIR) install DESTDIR=$(DESTDIR)
 	$(POST-INSTALL-HOOK)
 
-clean:
+clean::
 	rm -f build-stamp
 	cd $(SRCDIR); [ ! -r Makefile ] || make distclean
 	rm -f $(SRCDIR)/config.sub $(SRCDIR)/config.guess
