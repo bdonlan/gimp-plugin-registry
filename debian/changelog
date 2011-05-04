@@ -1,4 +1,4 @@
-gimp-plugin-registry (3.5.2-2) unstable; urgency=low
+gimp-plugin-registry (3.5.3) unstable; urgency=low
 
   * [1010463f] Fix refocus Makefile to include all necessary linkage.
 
