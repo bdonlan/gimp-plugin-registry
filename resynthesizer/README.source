@@ -1,0 +1,12 @@
+gimp-plugin-registry (3.5.3) unstable; urgency=low
+
+The configure and build process for this plugin is rather unclean; it modifies
+a number of autotools files and leaves binary test results around after make
+clean. It also contains binary images for test purposes, with unclear
+copyright attribution.
+
+As such, rather than monkey-patching upstream's code, I've chosen simply to
+re-extract it each build. Additionally, the test images have been removed until
+I can figure out who they belong to.
+
+ -- Bryan Donlan <bd@homuhomu>  Wed, 04 May 2011 00:24:08 -0400
